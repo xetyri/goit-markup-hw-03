@@ -15,6 +15,26 @@ body {
   font-family: var(--main-font);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
@@ -27,6 +47,17 @@ body {
   font-style: normal;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 /* ----- COMPONENTS ----- */
 .hero,
 .footer {
@@ -34,6 +65,8 @@ body {
 }
 
 .modal-btn {
+  width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -42,6 +75,8 @@ body {
   background-color: var(--accent-color);
   color: var(--color-main);
   border: none;
+  border-radius: 4px;
+  margin-left: 485px;
 }
 
 .modal-btn:hover,
@@ -93,15 +128,58 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-title);
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* ----- END COMPONENTS ----- */
 
 /* ----- HEADER ----- */
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.tel-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.navigation-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.logotype {
+  margin-right: 93px;
+}
+
 .navigation-link-color {
   color: var(--color-title);
 }
@@ -115,12 +193,25 @@ body {
   color: var(--accent-color);
 }
 
+.tel-link {
+}
+
 .tel-link-color {
   color: var(--color-subtext);
 }
+
+.mail-link {
+  margin-right: 40px;
+}
+
 /* ----- END HEADER ----- */
 
 /* ----- HERO ----- */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -128,10 +219,33 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-main);
+  margin-bottom: 30px;
+  padding-left: 237px;
+  padding-right: 237px;
+  text-align: center;
 }
 /* ----- END HERO ----- */
 
 /* ----- OUR TEAM ----- */
+
+.quality-size {
+  width: 270px;
+  height: 101px;
+}
+
+.quality-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.quality-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .name-team {
   font-weight: 500;
   font-size: 16px;

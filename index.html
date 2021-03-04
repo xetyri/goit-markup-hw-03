@@ -15,61 +15,81 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navigation">
-            <a class="logotype logotype-light-theme link" href="./index.html" lang="en">
-                <span class="logo-Web">Web</span>Studio</a>
-            <ul class="navigation-list list">
-                <li class="navigation-item">
-                    <a class="navigation-link nav-link-onclick-color link" href="./index.html">Студия</a>
+        <div class="container">
+            <nav class="navigation">
+                <a class="logotype logotype-light-theme link" href="./index.html" lang="en">
+                    <span class="logo-Web">Web</span>Studio</a>
+                <ul class="navigation-list list">
+                    <li class="navigation-item">
+                        <a class="navigation-link nav-link-onclick-color link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-color link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-color link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="tel-list list">
+                <li>
+                    <a class="mail-link navigation-link tel-link-color link" href="mailto:info@devstudio.com" lang="en">
+                        info@devstudio.com
+                    </a>
                 </li>
-                <li class="navigation-item">
-                    <a class="navigation-link navigation-link-color link" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="navigation-item">
-                    <a class="navigation-link navigation-link-color link" href="">Контакты</a>
+                <li>
+                    <a class="navigation-link tel-link-color link" href="tel:+380961111111">
+                        +38 096 111 11 11
+                    </a>
                 </li>
             </ul>
-        </nav>
-        <a class="navigation-link tel-link-color link" href="mailto:info@devstudio.com" lang="en">
-            info@devstudio.com
-        </a>
-        <a class="navigation-link tel-link-color link" href="tel:+380961111111">
-            +38 096 111 11 11
-        </a>
+        </div>
     </header>
     <main>
         <section class="hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="modal-btn" type="button">Заказать услугу</button>
+            <div class="container">
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <button class="modal-btn" type="button">Заказать услугу</button>
+            </div>
         </section>
         <section class="quality">
-            <h2 hidden>Наши качества</h2>
-            <ul class="quality-list list">
-                <li class="quality-item">
-                    <h3 class="suptitle">Внимание к деталям</h3>
-                    <p class="description">
-                        Идейные соображения, а также начало повседневной работы по формированию позиции.
-                    </p>
-                </li>
-                <li class="quality-item">
-                    <h3 class="suptitle">Пунктуальность</h3>
-                    <p class="description">
-                        Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-                    </p>
-                </li>
-                <li class="quality-item">
-                    <h3 class="suptitle">Планирование</h3>
-                    <p class="description">
-                        Равным образом консультация с широким активом в значительной степени обуславливает.
-                    </p>
-                </li>
-                <li class="quality-item">
-                    <h3 class="suptitle">Современные технологии</h3>
-                    <p class="description">
-                        Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-                    </p>
-                </li>
-            </ul>
+            <h2 class="visually-hidden">Наши качества</h2>
+            <div class="container">
+                <ul class="quality-list list">
+                    <li class="quality-item">
+                        <div class="quality-size">
+                            <h3 class="suptitle">Внимание к деталям</h3>
+                            <p class="description">
+                                Идейные соображения, а также начало повседневной работы по формированию позиции.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="quality-item">
+                        <div class="quality-size">
+                            <h3 class="suptitle">Пунктуальность</h3>
+                            <p class="description">
+                                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="quality-item">
+                        <div class="quality-size">
+                            <h3 class="suptitle">Планирование</h3>
+                            <p class="description">
+                                Равным образом консультация с широким активом в значительной степени обуславливает.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="quality-item">
+                        <div class="quality-size">
+                            <h3 class="suptitle">Современные технологии</h3>
+                            <p class="description">
+                                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="work">
             <h2 class="title">Чем мы занимаемся</h2>
