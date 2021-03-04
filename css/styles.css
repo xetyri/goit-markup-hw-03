@@ -9,6 +9,7 @@
   --color-logo: #000000;
   --color-subtext: #757575;
   --color-team: #f5f4fa;
+  --section-pad: 94px;
 }
 
 body {
@@ -41,10 +42,6 @@ img {
 
 .list {
   list-style: none;
-}
-
-.address {
-  font-style: normal;
 }
 
 .visually-hidden {
@@ -104,29 +101,14 @@ img {
   color: var(--accent-color);
 }
 
-.description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--color-subtext);
-}
-
-.suptitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--color-title);
-}
-
 .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--color-title);
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .container {
@@ -170,6 +152,8 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .navigation-item:not(:last-child) {
@@ -191,9 +175,6 @@ img {
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--accent-color);
-}
-
-.tel-link {
 }
 
 .tel-link-color {
@@ -225,8 +206,30 @@ img {
   text-align: center;
 }
 /* ----- END HERO ----- */
+/* ----- quality ----- */
 
-/* ----- OUR TEAM ----- */
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-subtext);
+}
+
+.suptitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-title);
+  margin-bottom: 10px;
+}
+
+.quality {
+  padding-top: var(--section-pad);
+  padding-bottom: var(--section-pad);
+}
 
 .quality-size {
   width: 270px;
@@ -246,12 +249,63 @@ img {
   margin-top: 30px;
 }
 
+/* ----- END quality ----- */
+/* ----- work ----- */
+.work {
+  padding-bottom: var(--section-pad);
+}
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.work-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/* ----- END work ----- */
+/* ----- OUR TEAM ----- */
+.team {
+  padding-top: var(--section-pad);
+  padding-bottom: var(--section-pad);
+  background: var(--color-team);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .name-team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--color-title);
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .position-team {
@@ -260,10 +314,25 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--color-subtext);
+  text-align: center;
 }
 /* ----- END OUR TEAM ----- */
 
 /* ----- FOOTER ----- */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address {
+  margin-top: 20px;
+  font-style: normal;
+}
+
 .contact-list-link {
   font-weight: 400;
   font-size: 14px;
@@ -277,13 +346,19 @@ img {
   color: var(--accent-color);
 }
 
-.team {
-  background: var(--color-team);
-}
 /* ----- END FOOTER ----- */
 
 /* ----- Portfolio ----- */
 /* ----- Main ----- */
+
+.filter-list {
+  display: flex;
+  margin-left: 295px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .filter-btn {
   font-weight: 500;
@@ -293,10 +368,17 @@ img {
   cursor: pointer;
   color: var(--color-title);
   border: none;
+  border-radius: 4px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--accent-color);
   color: var(--color-main);
 }
